@@ -1,0 +1,185 @@
+                                            
+html {
+	font-size: 62.5%;
+  
+}
+
+body {
+  font-family: 'Formula Condensed', sans-serif;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+
+/*a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+}*/
+
+ul {
+  display: flex;
+  min-height: 5vh;
+  padding: 1rem;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(0, 0, 0);
+  list-style: none;
+
+
+}
+
+li a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  padding: 3rem;
+  background-color: #000000;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+  flex: 1 1 auto;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+li a:hover {
+  background-color:#1b1b1b;
+}
+
+li a:active {
+  background-color:#d25b00;
+  font-size: 2.5rem;
+
+}
+
+nav img {
+width: 4%;
+  border-radius: 20%;
+}
+
+
+
+  
+
+.banner {
+  min-height: 45vh;
+  background: url(/images/ballon_grosPlan.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-text {
+  /*background: rgb(0, 0, 0, 0.5);*/
+  width: 100%;
+}
+
+.banner h1 {
+  font-size: 10rem;
+  font-weight: bold;
+
+  margin-bottom: 0.5rem;
+  text-align: left;
+  padding: 3rem;
+  letter-spacing: 2rem;
+}
+
+.banner h3 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  padding: 3rem;
+  
+}
+
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  height: 50vh;
+}
+
+.image-intro {
+  flex: 1 1 30rem;
+  background: rgb(0, 0, 0);
+}
+
+.intro img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-intro {
+  background: rgb(255, 255, 255);
+  flex: 1 1 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-intro p {
+  font-size: 1.8rem;
+  padding: 0 2rem;
+  text-align: left;
+  line-height: 2.5rem;
+  color: #4C4859;
+  font-family: 'TT Norms', sans-serif;
+                                                
+                
+}
+
+.text-intro h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: left;
+  padding: 0 2rem;
+  line-height: 3rem;
+  color: #4C4859;
+  font-family: 'TT Norms', sans-serif;
+                                                
+}
+
+.text-intro h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+  padding: 0 2rem;
+  color: #4C4859;
+  font-family: 'TT Norms', sans-serif;
+  font-weight: bold;
+                                                
+}
+
+footer {
+  background:#d25b00;
+  color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
