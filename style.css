@@ -1,185 +1,85 @@
-                                            
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
-	font-size: 62.5%;
-  
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Formula Condensed', sans-serif;
+  margin: 0;
+  /* padding-bottom: 2em; */
+  font-family: "Syne", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #003b4a;
 }
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
+h1,
+h3 {
+  font-weight: 700;
+  line-height: 1;
+}
 
+h1 {
+  font-size: 7rem;
+}
 
-/*a {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  font-size: 1.5rem;
-}*/
+h2 {
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+/* a {
+  color: #f69333;
+} */
+
+a:hover,
+a:focus {
+  color: rgb(96, 112, 116);
+}
 
 ul {
-  display: flex;
-  min-height: 5vh;
-  padding: 1rem;
-  justify-content: space-around;
-  align-items: center;
-  background: rgb(0, 0, 0);
   list-style: none;
-
-
+  margin: 0;
+  padding: 0;
 }
 
-li a{
+nav ul li {
+  display: inline-block;
+  margin: 0;
+  padding: 0 1em;
+}
+
+nav ul li a {
+  color: #003b4a;
   text-decoration: none;
-  color: rgb(255, 255, 255);
-  font-size: 1.5rem;
-  padding: 3rem;
-  background-color: #000000;
-  border-radius: 3px;
-  transition: all 0.3s ease-in-out;
-  flex: 1 1 auto;
+  font-size: 2rem;
+}
+
+header {
+  width: 100%;
+  background: #0388a6;
+  text-align: center;
+  padding: 4em 0;
 }
 
 li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-
-
-li a:hover {
-  background-color:#1b1b1b;
-}
-
-li a:active {
-  background-color:#d25b00;
-  font-size: 2.5rem;
-
-}
-
-nav img {
-width: 4%;
-  border-radius: 20%;
-}
-
-
-
-  
-
-.banner {
-  min-height: 45vh;
-  background: url(/images/ballon_grosPlan.jpg);
-  background-size: cover;
-  background-position: center;
-  color: white;
-  
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.banner-text {
-  /*background: rgb(0, 0, 0, 0.5);*/
-  width: 100%;
-}
-
-.banner h1 {
-  font-size: 10rem;
-  font-weight: bold;
-
-  margin-bottom: 0.5rem;
-  text-align: left;
-  padding: 3rem;
-  letter-spacing: 2rem;
-}
-
-.banner h3 {
-  font-size: 4rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-  text-align: center;
-  padding: 3rem;
-  
-}
-
-.intro {
-  display: flex;
-  flex-wrap: wrap;
-  height: 50vh;
-}
-
-.image-intro {
-  flex: 1 1 30rem;
-  background: rgb(0, 0, 0);
-}
-
-.intro img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.text-intro {
-  background: rgb(255, 255, 255);
-  flex: 1 1 30rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.text-intro p {
-  font-size: 1.8rem;
-  padding: 0 2rem;
-  text-align: left;
-  line-height: 2.5rem;
-  color: #4C4859;
-  font-family: 'TT Norms', sans-serif;
-                                                
-                
-}
-
-.text-intro h3 {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 2rem;
-  text-align: left;
-  padding: 0 2rem;
-  line-height: 3rem;
-  color: #4C4859;
-  font-family: 'TT Norms', sans-serif;
-                                                
-}
-
-.text-intro h2 {
-  font-size: 4rem;
-  font-weight: bold;
-  margin-bottom: 2rem;
-  text-align: center;
-  padding: 0 2rem;
-  color: #4C4859;
-  font-family: 'TT Norms', sans-serif;
-  font-weight: bold;
-                                                
-}
-
-footer {
-  background:#d25b00;
-  color: white;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-footer p {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
+  list-style: none;
 }
