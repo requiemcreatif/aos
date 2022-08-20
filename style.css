@@ -38,7 +38,7 @@ h3 {
 }
 
 h1 {
-  font-size: 6rem;
+  /* font-size: 6rem; */
 }
 
 h2 {
@@ -124,7 +124,8 @@ main {
 
 .banner h1 {
   color: #ffffff;
-  font-size: 4rem;
+  font-size: 5rem;
+
   font-weight: 700;
   text-transform: uppercase;
 }
