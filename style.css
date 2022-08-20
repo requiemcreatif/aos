@@ -86,7 +86,7 @@ header {
   max-width: 1200px;
   margin: 0 auto;
   padding: 3em;
-  background: #a63429;
+  background: #243b40;
   text-align: center;
 }
 
@@ -112,7 +112,7 @@ main {
 
 .fa-bars {
   font-size: 5rem;
-  color: #003b4a;
+  color: #748c8a;
 }
 
 .fa-bars:hover {
@@ -166,7 +166,8 @@ main {
   padding-top: 5rem;
   padding-bottom: 5rem;
   margin-bottom: 10px;
-  background: #b4bfb5;
+  background: #243b40;
+  color: #748c8a;
 }
 
 .img-one img {
@@ -260,7 +261,7 @@ footer {
   max-width: 1200px;
   margin: 0 auto;
   padding: 3em;
-  background: #243b40;
+  background: #a63429;
   text-align: center;
   color: #fff;
 }
