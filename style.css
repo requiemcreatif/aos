@@ -163,6 +163,10 @@ main {
   font-size: 2rem;
   text-transform: uppercase;
   text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  margin-bottom: 10px;
+  background: #b4bfb5;
 }
 
 .img-one img {
@@ -179,7 +183,7 @@ main {
 
 .text-two {
   font-size: 1.6rem;
-  padding: 1rem 0;
+  padding: 2rem 0;
 }
 
 .bottom-btn {
@@ -227,8 +231,25 @@ aside {
   align-items: center;
   justify-content: center;
   text-align: center;
+  gap: 2rem;
   padding: 1rem;
   background: #748c8a;
+}
+
+.side-col {
+  border: #243b40 1px solid;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.pre-footer {
+  grid-area: pre-footer;
+  padding: 2rem;
+}
+
+.intro-pre {
+  padding: 2rem 0;
 }
 
 footer {
@@ -240,7 +261,7 @@ footer {
   color: #fff;
 }
 
-/* MEDIA QUERY */
+/* MEDIA QUERY MEDIA QUERY MEDIA QUERY*/
 
 @media (min-width: 500px) {
   .desktop-nav {
@@ -257,6 +278,7 @@ footer {
       "banner banner banner"
       "page-title page-title page-title"
       "first-section first-section side-content"
+      "pre-footer pre-footer pre-footer"
       "footer footer footer";
     padding-bottom: 30px;
   }
@@ -327,20 +349,26 @@ footer {
     grid-area: side-content;
     margin-top: 1rem;
     margin-right: 1rem;
+    margin-left: 2rem;
     margin-bottom: 1rem;
     border-radius: 5px;
+    background: #eee;
+    /* border: #345259 1px solid; */
   }
   aside {
     padding: 0;
+    display: flex;
+    justify-content: flex-start;
   }
 
   .side-col {
-    /* border: #fff 1px solid; */
+    /* border: #345259 1px solid; */
     padding: 1rem;
-    margin: 1rem;
+    margin: 0 1rem 1rem 0;
     border-radius: 5px;
     width: 300px;
-    height: 200px;
+    height: 300px;
+    /* background: #748c8a; */
   }
   .footer {
     grid-area: footer;
