@@ -1,3 +1,5 @@
+/* GENERAL SETTINGS */
+
 *,
 *::before,
 *::after {
@@ -11,10 +13,11 @@ html {
 
 body {
   margin: 0;
-  /* padding-bottom: 2em; */
+  background: #eee;
+  height: auto;
   font-family: "Syne", sans-serif;
-  font-size: 1.6rem;
-  line-height: 1.6;
+  /* font-size: 1.6rem;
+  line-height: 1.6; */
   color: #003b4a;
 }
 
@@ -35,15 +38,21 @@ h3 {
 }
 
 h1 {
-  font-size: 7rem;
+  font-size: 6rem;
 }
 
 h2 {
   text-transform: uppercase;
+  font-size: 3rem;
 }
 
 h3 {
   font-size: 2.5rem;
+}
+
+p,
+li {
+  font-size: 1.6rem;
 }
 
 /* a {
@@ -74,12 +83,211 @@ nav ul li a {
 }
 
 header {
-  width: 100%;
-  background: #0388a6;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3em;
+  background: #e74c3c;
   text-align: center;
-  padding: 4em 0;
 }
 
 li {
   list-style: none;
+}
+
+/* MAIN CONTENT */
+
+img {
+  max-width: 100%;
+}
+
+main {
+  max-width: 1200px;
+  margin: auto;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.1), 0 0 0.5em rgba(0, 0, 0, 0.1);
+}
+
+.banner {
+  height: auto;
+  background: #e74c3c;
+  display: flex;
+  flex: 0 1 40vw;
+  height: 40vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  background: url("/images/ballon_grosPlan.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.first-section {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.page-title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.img-one img {
+  border-radius: 5px;
+}
+.img-two img {
+  border-radius: 5px;
+}
+
+.text-one {
+  font-size: 1.6rem;
+  padding: 1rem 0;
+}
+
+.text-two {
+  font-size: 1.6rem;
+  padding: 1rem 0;
+}
+
+.bottom-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.btn {
+  display: block;
+  padding: 0.5em 1em;
+  /* background: #e74c3c; */
+  color: #fff;
+  border: none;
+  border-radius: 0.5em;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  height: 4rem;
+}
+
+.btn:hover {
+  background: #f69333;
+}
+
+.btn-left {
+  background: #e74c3c;
+}
+
+.btn-right {
+  background: #000000;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  background: #5a5a5a;
+}
+
+footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3em;
+  background: #e74c3c;
+  text-align: center;
+}
+
+/* MEDIA QUERY */
+
+@media (min-width: 500px) {
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "banner banner banner"
+      "page-title page-title page-title"
+      "first-section first-section side-content"
+      "footer footer footer";
+    padding-bottom: 30px;
+  }
+
+  .banner {
+    grid-area: banner;
+  }
+  .first-section {
+    grid-area: first-section;
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "img-one img-one "
+      "text-one text-one "
+      "text-two img-two "
+      "bottom-btn bottom-btn ";
+  }
+
+  .img-one {
+    grid-area: img-one;
+  }
+  .text-one {
+    grid-area: text-one;
+  }
+  .text-two {
+    grid-area: text-two;
+    padding-right: 1rem;
+  }
+  .img-two {
+    grid-area: img-two;
+  }
+  .bottom-btn {
+    grid-area: bottom-btn;
+  }
+
+  .page-title {
+    grid-area: page-title;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .side-content {
+    grid-area: side-content;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+  }
+  .footer {
+    grid-area: footer;
+  }
+
+  .bottom-btn {
+    flex-direction: row;
+    gap: 1rem;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 20px;
+  }
+  .btn {
+    width: 50%;
+  }
+  .btn-left {
+    background: #e74c3c;
+  }
+  .btn-right {
+    background: #000000;
+  }
+
+  footer {
+    padding: 3em;
+  }
 }
