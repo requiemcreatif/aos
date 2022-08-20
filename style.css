@@ -178,12 +178,12 @@ main {
 
 .text-one {
   font-size: 1.6rem;
-  padding: 1rem 0;
+  padding: 1rem 1rem;
 }
 
 .text-two {
   font-size: 1.6rem;
-  padding: 2rem 0;
+  padding: 2rem 1rem;
 }
 
 .bottom-btn {
@@ -193,7 +193,7 @@ main {
   justify-content: center;
   text-align: center;
   gap: 1rem;
-  padding: 1rem 0;
+  padding: 3rem 0 0 0;
 }
 
 .btn {
@@ -203,7 +203,7 @@ main {
   color: #fff;
   border: none;
   border-radius: 0.5em;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   text-transform: uppercase;
   transition: all 0.3s ease-in-out;
@@ -250,6 +250,10 @@ aside {
 
 .intro-pre {
   padding: 2rem 0;
+}
+
+.list-pre {
+  padding: 1rem 0;
 }
 
 footer {
