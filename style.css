@@ -137,7 +137,20 @@ main {
 .banner h1 {
   color: #ffffff;
   font-size: 4.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 
+.banner h2 {
+  color: #ffffff;
+  font-size: 4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.banner h3 {
+  color: #ffffff;
+  font-size: 3rem;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -234,7 +247,6 @@ aside {
   text-align: center;
   gap: 2rem;
   padding: 1rem;
-  background: #748c8a;
 }
 
 .side-col {
@@ -242,6 +254,7 @@ aside {
   padding: 1rem;
   width: 100%;
   border-radius: 5px;
+  background: #748c8a;
 }
 
 .pre-footer {
@@ -373,7 +386,7 @@ footer {
     border-radius: 5px;
     width: 300px;
     height: 300px;
-    /* background: #748c8a; */
+    background: #eee;
   }
   .footer {
     grid-area: footer;
