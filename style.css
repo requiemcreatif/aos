@@ -112,8 +112,12 @@ main {
 
 .fa-bars {
   font-size: 5rem;
+  color: #003b4a;
 }
 
+.fa-bars:hover {
+  color: #f69333;
+}
 .banner {
   height: auto;
   background: #e74c3c;
